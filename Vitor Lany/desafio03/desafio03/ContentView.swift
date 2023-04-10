@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var inputText: String
+    @State var inputText: String = "Visitante"
     @State private var showAlert = false
     
     var body: some View {
         VStack() {
-            
+                
             Text("Bem vindo, \(inputText)")
                 .font(.title)
             
@@ -30,7 +30,7 @@ struct ContentView: View {
             }.alert(isPresented: $showAlert) {
                 Alert(
                     title: Text("Titulo"),
-                    message: Text("Teste")
+                    message: Text("Seu nome é: \(inputText)")
                 )
             }
 
