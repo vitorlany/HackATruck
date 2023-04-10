@@ -19,10 +19,16 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
+                    .blur(radius: 5)
+                    .overlay(
+                        Text("Teste Vitor"),
+                             alignment: .leading)
                 
                 Text("HackaTruck")
                     .font(.title)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
+                    .padding(.top, -70)
+                    .fontWeight(.bold)
             }
             
             Text("MakerSpace")
