@@ -25,7 +25,7 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
                 .padding()
 
-            TextField("Altura (cm)", value: $altura, format:.number)
+            TextField("Altura (m)", value: $altura, format:.number)
                 .textFieldStyle(.roundedBorder)
                 .padding()
             
@@ -46,6 +46,12 @@ struct ContentView: View {
                     statusTexto = "Obesidade"
                 }
             }
+            .padding()
+            .background(.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+            .shadow(radius: 10)
+
             
             Spacer();
             
