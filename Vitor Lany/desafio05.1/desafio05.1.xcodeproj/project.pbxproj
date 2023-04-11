@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F398F7229E5D22500369E28 /* desafio05App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F398F7129E5D22500369E28 /* desafio05App.swift */; };
-		3F398F7429E5D22500369E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F398F7329E5D22500369E28 /* ContentView.swift */; };
-		3F398F7629E5D22B00369E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F398F7529E5D22B00369E28 /* Assets.xcassets */; };
-		3F398F7929E5D22B00369E28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F398F7829E5D22B00369E28 /* Preview Assets.xcassets */; };
-		3F44465E29E5E01B001AF5FF /* Lista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44465D29E5E01B001AF5FF /* Lista.swift */; };
+		3F44466C29E5E686001AF5FF /* desafio05_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44466B29E5E686001AF5FF /* desafio05_1App.swift */; };
+		3F44466E29E5E686001AF5FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44466D29E5E686001AF5FF /* ContentView.swift */; };
+		3F44467029E5E689001AF5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F44466F29E5E689001AF5FF /* Assets.xcassets */; };
+		3F44467329E5E689001AF5FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F44467229E5E689001AF5FF /* Preview Assets.xcassets */; };
+		3F44467A29E5E898001AF5FF /* Modo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44467929E5E898001AF5FF /* Modo1.swift */; };
+		3F44467C29E5E8C7001AF5FF /* Modo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44467B29E5E8C7001AF5FF /* Modo2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F398F6E29E5D22500369E28 /* desafio05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafio05.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F398F7129E5D22500369E28 /* desafio05App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio05App.swift; sourceTree = "<group>"; };
-		3F398F7329E5D22500369E28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3F398F7529E5D22B00369E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F398F7829E5D22B00369E28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3F44465D29E5E01B001AF5FF /* Lista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista.swift; sourceTree = "<group>"; };
+		3F44466829E5E686001AF5FF /* desafio05.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafio05.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F44466B29E5E686001AF5FF /* desafio05_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafio05_1App.swift; sourceTree = "<group>"; };
+		3F44466D29E5E686001AF5FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F44466F29E5E689001AF5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F44467229E5E689001AF5FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F44467929E5E898001AF5FF /* Modo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modo1.swift; sourceTree = "<group>"; };
+		3F44467B29E5E8C7001AF5FF /* Modo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modo2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F398F6B29E5D22500369E28 /* Frameworks */ = {
+		3F44466529E5E686001AF5FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +36,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F398F6529E5D22500369E28 = {
+		3F44465F29E5E686001AF5FF = {
 			isa = PBXGroup;
 			children = (
-				3F398F7029E5D22500369E28 /* desafio05 */,
-				3F398F6F29E5D22500369E28 /* Products */,
+				3F44466A29E5E686001AF5FF /* desafio05.1 */,
+				3F44466929E5E686001AF5FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3F398F6F29E5D22500369E28 /* Products */ = {
+		3F44466929E5E686001AF5FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F398F6E29E5D22500369E28 /* desafio05.app */,
+				3F44466829E5E686001AF5FF /* desafio05.1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F398F7029E5D22500369E28 /* desafio05 */ = {
+		3F44466A29E5E686001AF5FF /* desafio05.1 */ = {
 			isa = PBXGroup;
 			children = (
-				3F398F7129E5D22500369E28 /* desafio05App.swift */,
-				3F398F7329E5D22500369E28 /* ContentView.swift */,
-				3F44465D29E5E01B001AF5FF /* Lista.swift */,
-				3F398F7529E5D22B00369E28 /* Assets.xcassets */,
-				3F398F7729E5D22B00369E28 /* Preview Content */,
+				3F44466B29E5E686001AF5FF /* desafio05_1App.swift */,
+				3F44466D29E5E686001AF5FF /* ContentView.swift */,
+				3F44466F29E5E689001AF5FF /* Assets.xcassets */,
+				3F44467129E5E689001AF5FF /* Preview Content */,
+				3F44467929E5E898001AF5FF /* Modo1.swift */,
+				3F44467B29E5E8C7001AF5FF /* Modo2.swift */,
 			);
-			path = desafio05;
+			path = desafio05.1;
 			sourceTree = "<group>";
 		};
-		3F398F7729E5D22B00369E28 /* Preview Content */ = {
+		3F44467129E5E689001AF5FF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3F398F7829E5D22B00369E28 /* Preview Assets.xcassets */,
+				3F44467229E5E689001AF5FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,39 +76,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F398F6D29E5D22500369E28 /* desafio05 */ = {
+		3F44466729E5E686001AF5FF /* desafio05.1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F398F7C29E5D22B00369E28 /* Build configuration list for PBXNativeTarget "desafio05" */;
+			buildConfigurationList = 3F44467629E5E689001AF5FF /* Build configuration list for PBXNativeTarget "desafio05.1" */;
 			buildPhases = (
-				3F398F6A29E5D22500369E28 /* Sources */,
-				3F398F6B29E5D22500369E28 /* Frameworks */,
-				3F398F6C29E5D22500369E28 /* Resources */,
+				3F44466429E5E686001AF5FF /* Sources */,
+				3F44466529E5E686001AF5FF /* Frameworks */,
+				3F44466629E5E686001AF5FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = desafio05;
-			productName = desafio05;
-			productReference = 3F398F6E29E5D22500369E28 /* desafio05.app */;
+			name = desafio05.1;
+			productName = desafio05.1;
+			productReference = 3F44466829E5E686001AF5FF /* desafio05.1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3F398F6629E5D22500369E28 /* Project object */ = {
+		3F44466029E5E686001AF5FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					3F398F6D29E5D22500369E28 = {
+					3F44466729E5E686001AF5FF = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = 3F398F6929E5D22500369E28 /* Build configuration list for PBXProject "desafio05" */;
+			buildConfigurationList = 3F44466329E5E686001AF5FF /* Build configuration list for PBXProject "desafio05.1" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 3F398F6529E5D22500369E28;
-			productRefGroup = 3F398F6F29E5D22500369E28 /* Products */;
+			mainGroup = 3F44465F29E5E686001AF5FF;
+			productRefGroup = 3F44466929E5E686001AF5FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F398F6D29E5D22500369E28 /* desafio05 */,
+				3F44466729E5E686001AF5FF /* desafio05.1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3F398F6C29E5D22500369E28 /* Resources */ = {
+		3F44466629E5E686001AF5FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F398F7929E5D22B00369E28 /* Preview Assets.xcassets in Resources */,
-				3F398F7629E5D22B00369E28 /* Assets.xcassets in Resources */,
+				3F44467329E5E689001AF5FF /* Preview Assets.xcassets in Resources */,
+				3F44467029E5E689001AF5FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F398F6A29E5D22500369E28 /* Sources */ = {
+		3F44466429E5E686001AF5FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F398F7429E5D22500369E28 /* ContentView.swift in Sources */,
-				3F398F7229E5D22500369E28 /* desafio05App.swift in Sources */,
-				3F44465E29E5E01B001AF5FF /* Lista.swift in Sources */,
+				3F44466E29E5E686001AF5FF /* ContentView.swift in Sources */,
+				3F44467A29E5E898001AF5FF /* Modo1.swift in Sources */,
+				3F44466C29E5E686001AF5FF /* desafio05_1App.swift in Sources */,
+				3F44467C29E5E8C7001AF5FF /* Modo2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3F398F7A29E5D22B00369E28 /* Debug */ = {
+		3F44467429E5E689001AF5FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		3F398F7B29E5D22B00369E28 /* Release */ = {
+		3F44467529E5E689001AF5FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,14 +267,14 @@
 			};
 			name = Release;
 		};
-		3F398F7D29E5D22B00369E28 /* Debug */ = {
+		3F44467729E5E689001AF5FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"desafio05/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"desafio05.1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -283,7 +287,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.tadleao.desafio05;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.tadleao.desafio05-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -291,14 +295,14 @@
 			};
 			name = Debug;
 		};
-		3F398F7E29E5D22B00369E28 /* Release */ = {
+		3F44467829E5E689001AF5FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"desafio05/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"desafio05.1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.tadleao.desafio05;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.tadleao.desafio05-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,25 +326,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F398F6929E5D22500369E28 /* Build configuration list for PBXProject "desafio05" */ = {
+		3F44466329E5E686001AF5FF /* Build configuration list for PBXProject "desafio05.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F398F7A29E5D22B00369E28 /* Debug */,
-				3F398F7B29E5D22B00369E28 /* Release */,
+				3F44467429E5E689001AF5FF /* Debug */,
+				3F44467529E5E689001AF5FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F398F7C29E5D22B00369E28 /* Build configuration list for PBXNativeTarget "desafio05" */ = {
+		3F44467629E5E689001AF5FF /* Build configuration list for PBXNativeTarget "desafio05.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F398F7D29E5D22B00369E28 /* Debug */,
-				3F398F7E29E5D22B00369E28 /* Release */,
+				3F44467729E5E689001AF5FF /* Debug */,
+				3F44467829E5E689001AF5FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3F398F6629E5D22500369E28 /* Project object */;
+	rootObject = 3F44466029E5E686001AF5FF /* Project object */;
 }

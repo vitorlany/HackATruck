@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TabView {
-                Text("Azul").tabItem {
-                    Text("Azul")
-                    Image(systemName: "trash.square.fill")
+                Lista().tabItem {
+                    Text("Lista")
+                    Image(systemName: "list.bullet.clipboard")
                 }
                 
                 Text("Amarelo").tabItem {
