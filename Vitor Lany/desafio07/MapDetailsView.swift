@@ -10,15 +10,23 @@ import SwiftUI
 struct MapDetailsView: View {
     public var mapDetail: MapStruct
     var body: some View {
-        VStack {
-            AsyncImage(url: URL(string: mapDetail.imagem)) { image in
-                image.resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .cornerRadius(8.0)
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 50, height: 50)
+        ZStack {
+            VStack {
+                Group {
+                    AsyncImage(url: URL(string: mapDetail.imagem)) { image in
+                        image.resizable()
+                            .frame(width: 350, height: 300)
+                            .cornerRadius(8.0)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    Text(mapDetail.nome)
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Text(mapDetail.descricao)
+                }
+                Spacer()
+            }.padding()
         }
     }
 }

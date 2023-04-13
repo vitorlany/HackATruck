@@ -23,7 +23,7 @@ struct ContentView: View {
                     mapRegion = MKCoordinateRegion(center: list.local, span: MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04))
                     sheetOpen.toggle()
                 }.sheet(isPresented: $sheetOpen) {
-                    Text("Texto")
+                    MapDetailsView(mapDetail: list)
                         .presentationDetents([.height(500)])
                 }
             }
