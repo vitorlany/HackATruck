@@ -18,7 +18,7 @@ class ViewModel: ObservableObject {
     @Published private var data = Github()
     
     func fetch() {
-        guard let url = URL(string: "https://api.github.com/users/vitorjoseph") else {
+        guard let url = URL(string: "https://api.github.com/users/vitorlany") else {
             return
         }
         
