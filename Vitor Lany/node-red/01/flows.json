@@ -17,7 +17,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 160,
-        "y": 380,
+        "y": 340,
         "wires": [
             [
                 "1d8fa6f7f42ce480"
@@ -69,6 +69,23 @@
         "x": 640,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "0972734efeab6e4b",
+        "type": "http in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "url": "/lany/salvar",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "1d8fa6f7f42ce480"
+            ]
+        ]
     },
     {
         "id": "28538d71f168cef0",
