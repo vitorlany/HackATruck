@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "bcee79d7-08d8-40f7-924d-72973c177c03",
+		"name": "Vitor - NODE-RED",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Estacionamento PUC\",\n    \"endereco\": \"Coração Eucarístico - n123\",\n    \"vagas\": 12,\n    \"carros\": [\n        {\n            \"modelo\": \"Vectra\",\n            \"ano\": 2011,\n            \"cor\": \"preto\",\n            \"preco\": 35000.00\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:1880/lany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"lany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"03db913fecbf71cb5f31ed081a5b5d2d\",\n    \"_rev\": \"1-6017fa7157122fd318be69701c893a66\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:1880/lany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"lany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"2994fd552de5b342eeea8aa30f4ed4fb\",\n    \"_rev\": \"1-6017fa7157122fd318be69701c893a66\",\n    \"nome\": \"Estacionamento PUC\",\n    \"endereco\": \"Coração Eucarístico - n123\",\n    \"vagas\": 12,\n    \"carros\": [\n        {\n            \"modelo\": \"Vectra\",\n            \"ano\": 2011,\n            \"cor\": \"preto\",\n            \"preco\": 35000.00\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:1880/lany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"lany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Requisitar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"03db913fecbf71cb5f31ed081a5b5d2d\",\n    \"_rev\": \"1-6017fa7157122fd318be69701c893a66\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:1880/lany?_id=2994fd552de5b342eeea8aa30f4ed4fb",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"lany"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "2994fd552de5b342eeea8aa30f4ed4fb"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
