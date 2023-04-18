@@ -137,6 +137,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Requisitar Todos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"03db913fecbf71cb5f31ed081a5b5d2d\",\n    \"_rev\": \"1-6017fa7157122fd318be69701c893a66\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:1880/lany/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1880",
+					"path": [
+						"lany",
+						"all"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

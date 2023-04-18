@@ -1,0 +1,249 @@
+[
+    {
+        "id": "13fd210fa5bce018",
+        "type": "tab",
+        "label": "Vitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "03019a6bfd5208d3",
+        "type": "http in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "url": "/lany",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 720,
+        "wires": [
+            [
+                "0b0e3b295272067a"
+            ]
+        ]
+    },
+    {
+        "id": "1d8fa6f7f42ce480",
+        "type": "cloudantplus out",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "cloudant": "28538d71f168cef0",
+        "database": "vitorlany",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 420,
+        "y": 640,
+        "wires": [
+            [
+                "0ddc67b419b57673"
+            ]
+        ]
+    },
+    {
+        "id": "0ddc67b419b57673",
+        "type": "http response",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "0972734efeab6e4b",
+        "type": "http in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "url": "/lany",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 640,
+        "wires": [
+            [
+                "1d8fa6f7f42ce480"
+            ]
+        ]
+    },
+    {
+        "id": "a0befa3e01ccdb94",
+        "type": "http in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "url": "/lany",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "166ed1a67d2ae3cd"
+            ]
+        ]
+    },
+    {
+        "id": "5d411d4b2ecb87b5",
+        "type": "http in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "url": "/lany",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 800,
+        "wires": [
+            [
+                "21d792bb0e3739cb"
+            ]
+        ]
+    },
+    {
+        "id": "0b0e3b295272067a",
+        "type": "cloudantplus in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "cloudant": "28538d71f168cef0",
+        "database": "vitorlany",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 420,
+        "y": 720,
+        "wires": [
+            [
+                "89967a58f19cf25c"
+            ]
+        ]
+    },
+    {
+        "id": "89967a58f19cf25c",
+        "type": "http response",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "4fdea6a41a9caa30",
+        "type": "http response",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "21d792bb0e3739cb",
+        "type": "cloudantplus out",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "cloudant": "28538d71f168cef0",
+        "database": "vitorlany",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 420,
+        "y": 800,
+        "wires": [
+            [
+                "4fdea6a41a9caa30"
+            ]
+        ]
+    },
+    {
+        "id": "166ed1a67d2ae3cd",
+        "type": "cloudantplus out",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "cloudant": "28538d71f168cef0",
+        "database": "vitorlany",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "49f81cbe9e3b4b6c"
+            ]
+        ]
+    },
+    {
+        "id": "49f81cbe9e3b4b6c",
+        "type": "http response",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "232c03c9c81cbc1e",
+        "type": "http in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "url": "/lany/all",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 500,
+        "wires": [
+            [
+                "49d8d3f74bf1c39a"
+            ]
+        ]
+    },
+    {
+        "id": "49d8d3f74bf1c39a",
+        "type": "cloudantplus in",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "cloudant": "28538d71f168cef0",
+        "database": "vitorlany",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "11c6047173741397"
+            ]
+        ]
+    },
+    {
+        "id": "11c6047173741397",
+        "type": "http response",
+        "z": "13fd210fa5bce018",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "28538d71f168cef0",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1wjj9biq22tnvpkzud72pi9sfw1tv40jjxi3gygftsuv:8fe26d1ff85149489a74499f729a6da3@bbd3c0ee-d0c8-455b-bbd3-8d6d996c2c0a-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]
