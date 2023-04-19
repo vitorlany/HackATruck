@@ -1,0 +1,252 @@
+[
+    {
+        "id": "79d6f8d0553b83de",
+        "type": "tab",
+        "label": "Vitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5d94bf8988e767fb",
+        "type": "watson-text-to-speech",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "voice": "pt-BR_IsabelaV3Voice",
+        "voicehidden": "pt-BR_IsabelaV3Voice",
+        "format": "audio/wav",
+        "password": "",
+        "apikey": "93M_a57FqXbNHrvDvxYHs7X97nFHbouchfrlEVFLqOou",
+        "payload-response": false,
+        "service-endpoint": "https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/65c6918b-10e0-44df-aa42-20600626bf7c",
+        "x": 420,
+        "y": 580,
+        "wires": [
+            [
+                "3611738d7487307a"
+            ]
+        ]
+    },
+    {
+        "id": "3340a1edc9395fef",
+        "type": "inject",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Ouviram do Ipiranga as margens plácidas De um povo heroico, o brado retumbante E o Sol da liberdade, em raios fúlgidos Brilhou no céu da pátria nesse instante",
+        "payloadType": "str",
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "5d94bf8988e767fb"
+            ]
+        ]
+    },
+    {
+        "id": "3611738d7487307a",
+        "type": "play audio",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "voice": "160",
+        "x": 650,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "36560e9433f3ed91",
+        "type": "microphone",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "d685a54aad95dcae"
+            ]
+        ]
+    },
+    {
+        "id": "d685a54aad95dcae",
+        "type": "watson-speech-to-text",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": true,
+        "smartformatting": false,
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "BroadbandModel",
+        "bandhidden": "",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "fUlf2KEz19Tspyh8a9aA1tz_T2pPPPJGN_jTqusbpmvJ",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/8e86ef41-eb70-4606-8324-f5ebda2f861e",
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "ff720550e7ec7981",
+                "8f50aaf15bda2f0a"
+            ]
+        ]
+    },
+    {
+        "id": "ff720550e7ec7981",
+        "type": "debug",
+        "z": "79d6f8d0553b83de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "transcription",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "110327a62d82e5b1",
+        "type": "microphone",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "71ba054a57d33e84"
+            ]
+        ]
+    },
+    {
+        "id": "1668cbfca6f1ba3a",
+        "type": "watson-translator",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "action": "translate",
+        "basemodel": "ar-en",
+        "domain": "general",
+        "srclang": "pt",
+        "destlang": "en",
+        "apikey": "wb6caLfmjPfyzKG-xcD3yoB6j6T2aE0-MpDxQ2xSiOJJ",
+        "custom": "",
+        "domainhidden": "general",
+        "srclanghidden": "pt",
+        "destlanghidden": "en",
+        "basemodelhidden": "ar-en",
+        "customhidden": "",
+        "filetype": "forcedglossary",
+        "trainid": "",
+        "lgparams2": true,
+        "service-endpoint": "https://api.us-south.language-translator.watson.cloud.ibm.com/instances/fd1bfc9d-dd59-4236-acef-469b5b3abddc",
+        "x": 630,
+        "y": 680,
+        "wires": [
+            [
+                "6c251b271f008448"
+            ]
+        ]
+    },
+    {
+        "id": "6c251b271f008448",
+        "type": "debug",
+        "z": "79d6f8d0553b83de",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "71ba054a57d33e84",
+        "type": "watson-speech-to-text",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": true,
+        "smartformatting": false,
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "BroadbandModel",
+        "bandhidden": "",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "fUlf2KEz19Tspyh8a9aA1tz_T2pPPPJGN_jTqusbpmvJ",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/8e86ef41-eb70-4606-8324-f5ebda2f861e",
+        "x": 380,
+        "y": 680,
+        "wires": [
+            [
+                "1668cbfca6f1ba3a"
+            ]
+        ]
+    },
+    {
+        "id": "8f50aaf15bda2f0a",
+        "type": "cloudantplus out",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "cloudant": "9fa2f51b321c01e4",
+        "database": "vitorlany-audio",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 720,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9fa2f51b321c01e4",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1oyyl44w0ka2aw9z3fvb53wag6o79wi8boxf0xsbnpr:6c078caec78a17bbd953a16fff300224@bbd3c0ee-d0c8-455b-bbd3-8d6d996c2c0a-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]
