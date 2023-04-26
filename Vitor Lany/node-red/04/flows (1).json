@@ -1,0 +1,194 @@
+[
+    {
+        "id": "79d6f8d0553b83de",
+        "type": "tab",
+        "label": "Vitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d346db7182036182",
+        "type": "ibmiot in",
+        "z": "79d6f8d0553b83de",
+        "authentication": "apiKey",
+        "apiKey": "33c70ad655efea99",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "sensor01",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 70,
+        "y": 260,
+        "wires": [
+            [
+                "19a87e270bc356c1"
+            ]
+        ]
+    },
+    {
+        "id": "c1bde376b53f5aba",
+        "type": "cloudantplus out",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "cloudant": "9fa2f51b321c01e4",
+        "database": "vitorlanyiot",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "9c2c1713e3c287f9"
+            ]
+        ]
+    },
+    {
+        "id": "9c2c1713e3c287f9",
+        "type": "debug",
+        "z": "79d6f8d0553b83de",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "19a87e270bc356c1",
+        "type": "delay",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "cd22b846527cab5d"
+            ]
+        ]
+    },
+    {
+        "id": "cd22b846527cab5d",
+        "type": "change",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.d.umidade",
+                "pt": "msg",
+                "to": "payload.res",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "c1bde376b53f5aba"
+            ]
+        ]
+    },
+    {
+        "id": "168a78bb039966b9",
+        "type": "http in",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "url": "/umidade",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "6dc4a552ab71cd46"
+            ]
+        ]
+    },
+    {
+        "id": "6dc4a552ab71cd46",
+        "type": "cloudantplus in",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "cloudant": "9fa2f51b321c01e4",
+        "database": "vitorlanyiot",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "aeaf5cd96f125a07"
+            ]
+        ]
+    },
+    {
+        "id": "aeaf5cd96f125a07",
+        "type": "http response",
+        "z": "79d6f8d0553b83de",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "33c70ad655efea99",
+        "type": "ibmiot",
+        "name": "ibmiot",
+        "keepalive": "60",
+        "serverName": "1yfj69.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "9fa2f51b321c01e4",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1oyyl44w0ka2aw9z3fvb53wag6o79wi8boxf0xsbnpr:6c078caec78a17bbd953a16fff300224@bbd3c0ee-d0c8-455b-bbd3-8d6d996c2c0a-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    }
+]

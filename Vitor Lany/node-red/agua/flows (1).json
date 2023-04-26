@@ -1,0 +1,70 @@
+[
+    {
+        "id": "79d6f8d0553b83de",
+        "type": "tab",
+        "label": "Vitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d346db7182036182",
+        "type": "ibmiot in",
+        "z": "79d6f8d0553b83de",
+        "authentication": "apiKey",
+        "apiKey": "33c70ad655efea99",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "sensor01",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "9c2c1713e3c287f9"
+            ]
+        ]
+    },
+    {
+        "id": "9c2c1713e3c287f9",
+        "type": "debug",
+        "z": "79d6f8d0553b83de",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.d",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "33c70ad655efea99",
+        "type": "ibmiot",
+        "name": "ibmiot",
+        "keepalive": "60",
+        "serverName": "1yfj69.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    }
+]
